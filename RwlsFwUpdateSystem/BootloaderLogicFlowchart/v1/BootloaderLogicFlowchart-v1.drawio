@@ -1,0 +1,107 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
+    <mxGraphModel dx="1098" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-55" value="Power&lt;div&gt;On&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-58" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-56" target="YvpY-tz0neCEbJJrOUMj-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-56" value="Bootloader&lt;div&gt;GPIO=1&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-75" value="CONNECT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-57" target="YvpY-tz0neCEbJJrOUMj-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-57" value="&lt;div&gt;Enter FW Update mode&lt;/div&gt;(Initialize&lt;div&gt;BT Module&lt;/div&gt;&lt;div&gt;Wait for client to connect)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-55" target="YvpY-tz0neCEbJJrOUMj-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-62" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-60" target="YvpY-tz0neCEbJJrOUMj-61">
+          <mxGeometry x="-0.6923" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-60" value="New FW App ready in external flash memory" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-61" target="YvpY-tz0neCEbJJrOUMj-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-61" value="&lt;div&gt;Copy new app into on-chip flash memory&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="325" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-63" value="Cold Reboot" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="910" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-63" target="YvpY-tz0neCEbJJrOUMj-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-66" target="YvpY-tz0neCEbJJrOUMj-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-66" value="Clear new app flag in external memory" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="780" y="325" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-57" target="YvpY-tz0neCEbJJrOUMj-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-72" value="PowerCycle" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-73" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-56" target="YvpY-tz0neCEbJJrOUMj-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-74" target="YvpY-tz0neCEbJJrOUMj-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-74" value="&lt;div&gt;Download firmware and store to external flash memory&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-76" target="YvpY-tz0neCEbJJrOUMj-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-76" value="Validate and then set new app avaliable flag in external memory" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="780" y="160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-82" value="YES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-80" target="YvpY-tz0neCEbJJrOUMj-81">
+          <mxGeometry x="-0.6923" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-85" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-80" target="YvpY-tz0neCEbJJrOUMj-57">
+          <mxGeometry x="-0.9016" relative="1" as="geometry">
+            <mxPoint x="280" y="660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="630" />
+              <mxPoint x="480" y="630" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-80" value="Valid app present in on-chip memory" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="480" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-81" value="&lt;div&gt;Run RWLS FW application&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="485" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YvpY-tz0neCEbJJrOUMj-83" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YvpY-tz0neCEbJJrOUMj-60" target="YvpY-tz0neCEbJJrOUMj-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
