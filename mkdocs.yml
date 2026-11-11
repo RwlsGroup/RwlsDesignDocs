@@ -1,0 +1,44 @@
+site_name: Embedded Gauge Documentation
+
+theme:
+  name: material
+  language: en
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+#nav:
+#  - Project overview: index.md
+#  - Overview:
+#      - Operating model: 1.overview/operating-model.md
+#      - Versioning: 1.overview/versioning.md
+#      - Getting started: 1.overview/getting-started.md
+#  - Hardware:
+#      - Architecture: 2.hardware/hardware.md
+#      - 201 Gauge: 2.hardware/201-gauge.md
+#      - 202 Dash Gauge: 2.hardware/202-dash-gauge.md
+#  - Firmware:
+#      - Architecture: 3.firmware/firmware.md
+#      - Build and release: 3.firmware/build-and-release.md
+#      - Peripherals: 3.firmware/peripherals.md
+#      - UART: 3.firmware/uart.md
+#      - I2C and multiplexer: 3.firmware/i2c-and-multiplexer.md
+#      - SPI and QSPI: 3.firmware/spi-and-qspi.md
+#      - OTA support: 3.firmware/ota-support.md
+#      - Memory layout: 3.firmware/memory-layout.md
+#      - External flash: 3.firmware/external-flash.md
+#      - Update and recovery: 3.firmware/update-and-recovery.md
+#      - Pressure calculation and calibration: 3.firmware/pressure-calculation-and-calibration.md
+#      - Display and input: 3.firmware/display-and-input.md
+#      - Bluetooth communication: 3.firmware/bluetooth-communication.md
+#      - RS-232 communication: 3.firmware/rs232-communication.md
+#  - Mobile application:
+#      - Integration guidance: 4.mobile-application/mobile-application.md
+#  - Web services:
+#      - Distribution guidance: 5.web/web.md
+#  - Supporting software:
+#      - Tooling guidance: 6.supporting-software/supporting-software.md
